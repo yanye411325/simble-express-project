@@ -1,0 +1,83 @@
+.header{position:absolute;left:0;top:0;height:115px;background: rgba(0,0,0,.7);z-index:99;}
+.header h1{color:#fff;}
+.header .nav li a{color:#fff;}
+.index-banner-wrap{position: relative;width: 100%;overflow: hidden;}
+.index-banner{position:relative;left:50%;margin-left: -960px; top:0;width:1920px;height: 780px;}
+.slideBox{ width:1920px; height:780px; overflow:hidden; position:relative; border:1px solid #ddd;  }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:1920px; height:780px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+.title{text-align: center;padding: 50px 0;}
+.title h2{font-size: 34px;color:#434343;}
+.title p{font-size: 27px;color:#626262;}
+.business{padding-bottom: 60px;}
+.business .icons ul{width:110%;}
+.business .icons li{cursor: pointer;float: left;width:193px;height: 193px;margin-right: 59px;position: relative;text-align: center;}
+.business .icons li span{display: block;width:78px;height: 78px;margin:24px auto 26px;;background: url(../images/index_sprite.png) no-repeat;}
+.business .icons li.first span{background-position: 0 -390px;}
+.business .icons li.second span{background-position: 0 -468px;}
+.business .icons li.third span{background-position: 0 -546px;}
+.business .icons li.forth span{background-position: 0 -624px;}
+.business .icons li.last span{background-position: 0 -702px;}
+.business .icons li.first:hover span{background-position: 0 0;}
+.business .icons li.second:hover span{background-position: 0 -78px;}
+.business .icons li.third:hover span{background-position: 0 -156px;}
+.business .icons li.forth:hover span{background-position: 0 -234px;}
+.business .icons li.last:hover span{background-position: 0 -312px;}
+.business .icons li:hover{background: #4a8df5}
+.business .icons li p{font-size: 18px;color:#626262;font-weight: bold;}
+.business .icons li:hover p{font-size: 24px;color:#fff;font-weight: normal;}
+
+.case{background: #f4f4f4;padding-bottom: 74px;}
+.caseCon{margin-top:40px;}
+.caseCon ul{width:105%;}
+.caseCon ul li{width:372px;height: 272px;background: #fff;float: left;margin-right: 42px;position: relative;}
+.caseCon ul li:hover{background: #4a8df5;color:#fff;}
+.caseCon ul li:hover h2,.caseCon ul li:hover p{color:#fff;}
+.caseCon li h2{font-size: 18px;height: 70px;line-height: 32px;width:210px;text-align: center;margin:80px auto 0;color:#626262;}
+.caseCon li p{width:312px;font-size: 14px;color:#626262;line-height: 25px;margin:20px auto 0;height: 70px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+.caseCon li .icons{width:86px;height: 86px;position: absolute;left: 50%;margin-left: -43px;top:-48px;border:6px solid #578EEE;background: #fff;}
+.caseCon li .icons span{display: block;width:64px;height: 64px;position: absolute;left: 50%;margin-left: -32px;top:50%;margin-top:-27px;background: url(../images/index_case_1.png) no-repeat 0 0;}
+.caseCon li:nth-child(2) .icons span{background:url(../images/index_case_2.png) no-repeat center center;}
+.caseCon li:nth-child(3) .icons span{background:url(../images/index_case_3.png) no-repeat center center;}
+
+.caseCon li:hover .icons{border-color: #fff;}
+.caseCon li:hover .icons span{background:url(../images/index_case_11.png) no-repeat center center;}
+.caseCon li:nth-child(2):hover .icons span{background:url(../images/index_case_22.png) no-repeat center center;}
+.caseCon li:nth-child(3):hover .icons span{background:url(../images/index_case_33.png) no-repeat center center;}
+
+.contactUs{width:100%;background: url(../images/map.jpg) no-repeat center top;}
+.contactUs .location{width:100%;height: 214px;position: relative;}
+.contactUs .location span{font-size: 18px;color:#626262;background: #fff;padding:8px 20px;box-shadow: 0 0 8px 2px #eee;position: absolute;left: 700px;top:10px;}
+.contactUs .types ul{width:110%;padding-left: 3px;padding-bottom: 70px;}
+.contactUs .types li{text-align: center;float: left;width:370px;height: 160px;margin-right: 42px;background: #fff;box-shadow: 0 0 8px 2px #eee;}
+.contactUs .types li span{background: url(../images/indexicon_sprite.png) no-repeat;display: block;width:49px;height: 49px;margin:50px auto 15px;text-indent: -999em;}
+.contactUs .types .li01 span{background-position: 0 -98px;}
+.contactUs .types .li02 span{background-position: 0 -49px;}
+.contactUs .types .li03 span{background-position: 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+

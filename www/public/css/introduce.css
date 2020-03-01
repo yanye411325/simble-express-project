@@ -1,0 +1,34 @@
+.banner{width:100%;height: 248px;background: url(../images/intr_banner.jpg) no-repeat center top;}
+.content{margin-top:60px;padding-bottom: 50px;}
+.content .leftCon{width:811px;float: left;}
+.content .leftCon p{font-size: 16px;color:#313131;line-height: 28px;text-indent: 2em;margin-top:30px;text-align: justify;}
+
+.content .rightCon{width:308px;float: right;}
+.content .rightCon .searchBox{width:305px;height: 53px;border:1px solid #888888;position: relative;}
+.content .rightCon .searchBox input{display:block;width:243px;height: 53px;line-height: 53px;border:0;background: transparent;padding-left: 12px;color:#a4a4a4;outline:none;}
+.content .rightCon .searchBox a{display: block;width:48px;height: 48px;position: absolute;right: 2px;top:50%;margin-top:-24px;background: #464c64 url(../images/search_icon.png) no-repeat center center;}
+.content .rightCon .news h2{font-size: 22px;color:#313131;height: 68px;line-height: 68px;margin-top:10px;padding-left: 40px;background: url(../images/intr_news_icon.png) no-repeat left center;border-bottom:2px dashed #d0d0d0;font-weight: normal;}
+.content .rightCon .news ul{height: 250px;overflow-y:scroll;}
+.content .rightCon .news li{height: 58px;line-height: 58px;border-bottom: 2px dashed #d0d0d0;}
+.content .rightCon .news li a{display: block;width:100%;height: 100%;text-indent: 3px;color:#313131;font-size: 16px;}
+.content .rightCon .hotLine{margin-top:10px;}
+.content .rightCon .hotLine h2{font-size: 22px;height: 50px;line-height: 50px;padding-left: 44px;background: url(../images/intr_tel_icon.png) no-repeat left center;font-weight: normal;}
+.content .rightCon .hotLine .line{width:80px;height: 5px;background: #4a8df5;margin-top:8px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

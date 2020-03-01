@@ -1,0 +1,15 @@
+.header{padding-bottom: 248px;background: url(../images/law_banner.jpg) no-repeat center top;}
+.header h1{color:#fff;}
+.header .nav li a{color:#fff;}
+.header .dataBase{width:700px;position: absolute;left: 50%;margin-left: -350px;text-align: center;}
+.header .dataBase h2{font-size: 40px;color:#fff;height: 80px;line-height: 80px;font-weight: normal;}
+.header .dataBase .inputBox{width:700px;height: 45px;line-height: 45px;position: relative;}
+.header .dataBase .inputBox input{display: block;width:100%;height: 45px;line-height: 45px;text-indent: 15px;font-size: 18px;color:#666;border:0;background: #fff;outline: none;}
+.header .dataBase .inputBox a{display: block;width:95px;height: 45px;line-height: 45px;text-align: center;font-size: 20px;color:#fff;background: #4a8df5;position: absolute;right: 0;top:0;}
+
+.content .resCon ul{border:1px solid #e0e0e0;border-radius: 5px;}
+.content .resCon li{padding:25px 22px 12px;border-bottom: 2px solid #eff1f5;}
+.content .resCon li:last-child{border-bottom: 0;}
+.content .resCon li h2{font-size: 20px;color:#313131;height: 30px;line-height: 30px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-weight: normal;}
+.content .resCon li p{font-size: 16px;color:#313131;line-height: 28px;}
+.content .result{position: relative;padding-bottom: 75px;margin-top:35px;}

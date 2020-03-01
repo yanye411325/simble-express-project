@@ -1,0 +1,24 @@
+.banner{position: relative;width:100%;height: 248px;background: url(../images/list_banner.jpg) no-repeat top center;}
+.banner span{display: block;width:100%;font-size: 40px;color:#fff;position: absolute;text-align: center;top:96px;left: 0;}
+
+.content{padding-bottom: 50px;}
+.content .breadNav{font-size: 16px;color:#6a6969;height: 39px;line-height: 39px;}
+.content .breadNav a{color:#6a6969;}
+.content .breadNav a:hover{color:#bd2f2f;}
+.content .conTxt{border:1px solid #e0e0e0;padding:90px 140px 60px;border-radius: 3px;}
+.content .conTxt h2{font-size: 22px;color:#313131;height: 72px;line-height: 72px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;text-align: center;font-weight: normal;padding-bottom: 20px;border-bottom: 2px solid #c5c6c6;margin-bottom: 40px;}
+.content .conTxt p{font-size: 18px;color:#313131;text-indent: 2em;text-align: justify;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

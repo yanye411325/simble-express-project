@@ -1,0 +1,20 @@
+.banner{position: relative;width:100%;height: 248px;background: url(../images/list_banner.jpg) no-repeat top center;margin-bottom: 60px;}
+.banner span{display: block;width:100%;font-size: 40px;color:#fff;position: absolute;text-align: center;top:96px;left: 0;}
+
+.content .leftCon{float: left;width:290px;}
+.content .leftCon .searchBox{width:288px;height: 53px;border:1px solid #888888;position: relative;}
+.content .leftCon .searchBox input{display:block;width:225px;height: 53px;line-height: 53px;border:0;background: transparent;padding-left: 12px;color:#a4a4a4;outline:none;}
+.content .leftCon .searchBox a{display: block;width:48px;height: 48px;position: absolute;right: 2px;top:50%;margin-top:-24px;background: #464c64 url(../images/search_icon.png) no-repeat center center;}
+.content .leftCon .menu{width:288px;border:1px solid #bcbcbc;margin-top:28px;}
+.content .leftCon .menu li{width:100%;height: 62px;line-height: 62px;font-size: 18px;color:#313131;border-bottom: 1px dashed #d0d0d0;text-indent: 35px;cursor: pointer;}
+.content .leftCon .menu li.last{border:0;}
+.content .leftCon .menu li.on{background: #4a8df5;color:#fff;font-weight: bold;}
+.content .rightCon{float: right;width:880px;}
+.content .rightCon li{font-size: 16px;color:#313131;height: 58px;line-height: 58px;overflow: hidden;border-bottom: 1px dashed #d0d0d0;}
+.content .rightCon li p{float: left;width:715px;height: 58px;line-height: 58px;padding-left: 12px;}
+.content .rightCon li span{font-size: 14px;color:#313131;float: left;}
+.content .rightCon li .viewNum{padding-left: 29px;background: url(../images/view_icon.png) no-repeat left center;width:95px;}
+.content .rightCon li .viewNum i{font-style: normal;}
+.content .rightCon li .date{padding-left: 26px;background: url(../images/date_icon.png) no-repeat left center;}
+
+

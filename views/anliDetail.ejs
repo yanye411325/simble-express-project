@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>上海致悦会计师事务所</title>
+	<link rel="shortcut icon" href=" /favicon.ico" /> 
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/detail.css">
+	<style>
+		.content .conTxt{padding-top: 20px;font-size: 16px;}
+		.content .conTxt h2{padding-bottom: 0px;border-bottom: 0;margin-bottom: 10px;}
+		.content .conTxt p.newsDate{color: #666;font-size: 12px;padding-bottom: 10px;text-align: right;}
+		.content .conTxt p.newscon{color: #333;line-height: 1.8em;font-size: 14px;padding-top: 20px; border-top: 1px solid #C5C6C6;}
+	</style>
+	<script type="text/javascript" src="../public/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="w1200 clearfloat">
+			<h1>上海致悦会计师事务所</h1>
+			<div class="nav">
+				<ul class="clearfloat">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../introduce.html">公司简介</a></li>
+					<li><a href="../case.html">业务领域</a></li>
+					<li><a href="../law.html">政策解读</a></li>
+					<li><a href="../contact.html">联系我们</a></li>
+				</ul>
+			</div>
+			<!-- <div class="search" id="search">
+				<input type="text" >
+				<a href="javascript:;">&nbsp;</a>
+			</div> -->
+		</div>
+	</div>
+	<div class="banner">
+		<span>成功案例</span>
+	</div>
+	<div class="content">
+		<div class="w1200 clearfloat">
+			<div class="breadNav">
+				<a href="../index.html">首页</a>
+				 | 成功案例
+			</div>
+			<div class="conTxt">
+				<h2 class="newsTitle"><%=anliData[0].title%></h2>
+				<p class="newscon"><%-anliData[0].content.replace('\n','</br>')%></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../public/js/common.js"></script>
+</body>
+</html>

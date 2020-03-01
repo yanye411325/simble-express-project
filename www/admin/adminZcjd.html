@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+    <style type="text/css" media="screen">
+        html body{width: 100%;height: 100%;overflow: hidden;}
+        .err-message{color: red;padding:0 40px;}
+        .right-con-wrap .newsContent{text-align: left;}
+    </style>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-content">
+        <div class="header-el"><h1>致悦会计事务所</h1><span>欢迎您，管理员<em id="username"></em></span></div>
+        <div class="content-wrap clearfix" >
+            <div class="left-wrap">
+                <ul>
+                    <li><a href="./adminBanner.html">banner管理</a></li>
+                    <li><a href="./adminNews.html">新闻管理</a></li>
+                    <li><a href="./adminAnli.html">成功案例</a></li>
+                    <li class="active"><a href="./adminZcjd.html">政策解读</a></li>
+                </ul>
+            </div>
+            <div class="right-wrap">
+                <h3>政策解读</h3>
+                <div class="handler-btn">
+                    <button id="addBtn">新增</button>
+                </div>
+                <div class="news-con-wrap right-con-wrap">
+                    <p id="empty">这里什么都没有,请添加政策解读</p>
+                    <table>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>标题</td>
+                            <td>内容</td>
+                            <td>题注</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>加快发展中国特色管理会计</td>
+                                <td>加快发展中国特色管理企业</td>
+                                <td>2018-06-23</td>
+                                <td><button class="modifyBtn">修改</button><button class="cancleBtn">删除</button></td>
+                            </tr> -->
+                            
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="addMsk common-dialog-mask">
+        <div class="common-dialog-container">
+            <button class="dialog-close-btn">X</button>
+            <div class="common-dialog-header">
+                <h3>新增政策解读</h3>
+            </div>
+            <div class="common-dialog-content">
+                <p><label for="title">标&emsp;&emsp;题：</label><input id="title" type="text" /></p>
+                <p><label for="content">内&emsp;&emsp;容：</label><textarea id="content"></textarea></p>
+                <p><label for="tz">题&emsp;&emsp;注：</label><input  id="tz"  type="text" /></p>
+            </div>
+            <p class="err-message"></p>
+            <div class="common-dialog-footer">
+                <button class="dialogConfirmBtn">确认</button>
+                <button class="dialogCancleBtn">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="editorMsk common-dialog-mask">
+        <div class="common-dialog-container">
+            <button class="dialog-close-btn">X</button>
+            <div class="common-dialog-header">
+                <h3>修改政策解读</h3>
+            </div>
+            <div class="common-dialog-content">
+                <p><label for="title1">标&emsp;&emsp;题：</label><input id="title1" type="text" /></p>
+                <p><label for="content">内&emsp;&emsp;容：</label><textarea id="content1"></textarea></p>
+                <p><label for="tz">题&emsp;&emsp;注：</label><input  id="tz"  type="text" /></p>
+            </div>
+            <p class="err-message"></p>
+            <div class="common-dialog-footer">
+                <button class="dialogConfirmBtn">确认</button>
+                <button class="dialogCancleBtn">取消</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/adminZcjd.js"></script>
+</body>
+</html>

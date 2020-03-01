@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>上海致悦会计师事务所</title>
+	<link rel="shortcut icon" href=" /favicon.ico" /> 
+	<link rel="stylesheet" type="text/css" href="./public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./public/css/introduce.css">
+</head>
+<body>
+	<div class="header">
+		<div class="w1200 clearfloat">
+			<h1>上海致悦会计师事务所</h1>
+			<div class="nav">
+				<ul class="clearfloat">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="introduce.html" class="on">公司简介</a></li>
+					<li><a href="case.html">业务领域</a></li>
+					<li><a href="law.html">政策解读</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+			</div>
+			<!-- <div class="search" id="search">
+				<input type="text" >
+				<a href="javascript:;">&nbsp;</a>
+			</div> -->
+		</div>
+	</div>
+	<div class="banner">&nbsp;</div>
+	<div class="content">
+		<div class="w1200 clearfloat">
+			<div class="leftCon">
+				
+				<p><span style="font-size: medium;">&nbsp; &nbsp;</span><span style="font-size: medium;">&nbsp;</span><span style="FONT-SIZE: medium">上海致悦会计师事务所是2005年经上海市财政厅批准依照国际惯例设立的中介服务机构。经过长期的不懈的努力，我们已成功的为上千家企事业单位提供了各种类型的审计、管理咨询、财务顾问等服务。以支持和保证我们能更好的满足客户面向全中国发展业务的需要。&nbsp;</span></p>
+				<p><font size="3">&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 我们的员工受过严格的专业培训及职业道德教育，充满激情，敬业勤奋，从而使我们的工作更富有成效。我们的员工有政府审计部门、大型国有企业内部审计部门工作的经历以及长期从事社会审计工作的经历，在处理复杂审计项目、专项审计和替代内部审计方面积累了丰富的经验。我们制定了严格的工作标准、业务流程以及质量控制程序，以确保我们的工作符合法律规范并满足委托人的要求。 <br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 致悦致力于通过优秀的服务积累客户，以人性化的管理制度吸引人才，以崇高的责任回报社会。致悦致力于将我们建设成受人尊敬、值得信赖的中介机构。我们已在各种类型的审计、税务筹划、财务审计及管理培训积累了丰富的实践及理论经验，储备了业务熟练、正直诚实、道德过硬的人才队伍。我们良好的职业操守，严谨的执业习惯、勤勉的工作作风、优质高效的服务，赢得了客户和相关政府部门的肯定与信任，并推动我们向更高的目标迈进。<br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 我们的远景是将致悦建设成为一流的中介服务机构，使致悦的每一位员工自豪愉快的工作和生活。<br><br>&nbsp;&nbsp;&nbsp; 我们希望我们为客户提供的专业化服务和解决方案能为委托人创造或增添更多的价值。我们期待着与更多的企业建立合作关系并提供优质的服务。<br><br>&nbsp;&nbsp;&nbsp; 致悦积极参与社会公益事业的支持与资助，是田字格助学资金的战略合作者。</font></p>
+				<p><font size="3"></font>&nbsp;</p>
+				<p><br>&nbsp;</p>
+			</div>
+			<div class="rightCon">
+				<div class="searchBox">
+					<input type="text" name="" value="查找关键字" onfocus="if (this.value == '查找关键字') {this.value=''}" onblur="if (this.value == '') {this.value='查找关键字'}">
+					<a href="javascript:;" class="btn">&nbsp;</a>
+				</div>
+				<div class="news">
+					<h2>媒体新闻</h2>
+					<ul class="news-lists-wrap">
+						<% for(var i=0;i<news.length;i++){ %> 
+						<li>
+							<a href="./news/detail.html?ID=<%=news[i].ID%>" target="_blank"><%= news[i].title %></a>
+						</li>
+						<%}%>
+					</ul>
+				</div>
+				<div class="hotLine">
+					<h2>咨询热线</h2>
+					<div class="line"></div>
+					<p style="font-size: 16px;font-weight:700;padding:20px 0 0;">400-520-2569</p>
+					<p style="font-size: 16px;font-weight:700;padding:10px 0;">021-6898543</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./public/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./public/js/common.js"></script>
+	<script>
+		cutStr(".news li",15);
+	</script>
+</body>
+</html>

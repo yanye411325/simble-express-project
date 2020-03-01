@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>上海致悦会计师事务所</title>
+	<link rel="shortcut icon" href=" ./favicon.ico" /> 
+	<link rel="stylesheet" type="text/css" href="./public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./public/css/index.css">
+</head>
+<body>
+	<div class="index-banner-wrap">
+			<div class="header">
+				<div class="w1200 clearfloat">
+					<h1>上海致悦会计师事务所</h1>
+					<div class="nav">
+						<ul class="clearfloat">
+							<li><a href="index.html" class="on">首页</a></li>
+							<li><a href="introduce.html">公司简介</a></li>
+							<li><a href="case.html">业务领域</a></li>
+							<li><a href="law.html">政策解读</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
+					</div>
+					<!-- <div class="search" id="search">
+						<input type="text" >
+						<a href="javascript:;">&nbsp;</a>
+					</div> -->
+				</div>
+			</div>
+			<div id="slideBox" class="slideBox index-banner">
+				<div class="hd">
+					<ul><li class="on">1</li><li class="">2</li><li class="">3</li></ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<% for(let i = 0; i< banners.length;i++){ %>
+						<li><a href="javascript:"><img src= http://localhost:8088/uploads/<%= banners[i].src %>></a></li>
+						<% }%>
+					</ul>
+				</div>
+	
+				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+				<a class="prev" href="javascript:void(0)"></a>
+				<a class="next" href="javascript:void(0)"></a>
+	
+			</div>
+	</div>
+	
+	<div class="content">
+		<div class="business">
+			<div class="w1200">
+				<div class="title">
+					<h2>业务领域</h2>
+					<p>BUSINESS</p>
+				</div>
+				<div class="icons">
+					<ul class="clearfloat">
+						<li class="first">
+							<span>&nbsp;</span>
+							<p>纳税筹划</p>
+						</li>
+						<li class="second">
+							<span>&nbsp;</span>
+							<p>税务代理</p>
+						</li>
+						<li class="third">
+							<span>&nbsp;</span>
+							<p>税务鉴证</p>
+						</li>
+						<li class="forth">
+							<span>&nbsp;</span>
+							<p>税务风险管理</p>
+						</li>
+						<li class="last">
+							<span>&nbsp;</span>
+							<p>税务咨询</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="case">
+			<div class="w1200">
+				<div class="title">
+					<h2>成功案例</h2>
+					<p>CASE</p>
+				</div>
+				<div class="caseCon">
+					<ul class="clearfloat">
+							<% for(let i = 0; i< anliData.length;i++){ %>
+								<li><a href="./anli/anliDetail.html?ID=<%= anliData[i].ID%>"><h2><%= anliData[i].title %></h2>
+									<p><%= anliData[i].content %></p>
+									<div class="icons"><span>&nbsp;</span></div></a> </li>
+								<% }%>
+						<!-- <li>
+
+							<h2>新奥会计事业部准则实施衔接转换指引</h2>
+							<p>随着我国改革开放的逐渐深入，我国与世界经济的融合也进一步密切。全球经济一体化形成了经济领域的趋同，导致了会计准则、会计惯例的趋同。截至2005年，已经有97个国家表示将直接采用国际会计准则理事（IASB）制定的国际财务报告准则。随着我国经济开放程度越来越高，活跃在国际贸易和境外资本市场的中国企业更需要我国会计准则的国际化，从而为全球投资者提供更加透明可靠的财务信息，实现了与国际财务报 </p>
+							<div class="icons"><span>&nbsp;</span></div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="contactUs">
+			<div class="w1200">
+				<div class="title">
+					<h2>联系我们</h2>
+					<p>CONTACT US</p>
+				</div>
+				<div class="contactCon">
+					<div class="location">
+						<span>上海市浦东新区张杨路315号A栋32层</span>
+					</div>
+					<div class="types">
+						<ul class="clearfloat">
+							<li class="li01">
+								<span>&nbsp;</span>
+								<p>400-520-2569</p>
+							</li>
+							<li class="li02">
+								<span>&nbsp;</span>
+								<p>zysws@gmail.com</p>
+							</li>
+							<li class="li03">
+								<span>&nbsp;</span>
+								<p>021-6898543</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./public/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./public/js/common.js"></script>
+	<script type="text/javascript" src="./public/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script>
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,interTime:2500,delayTime:1000});
+	</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+    <style type="text/css" media="screen">
+        html body{width: 100%;height: 100%;overflow: hidden;}
+    </style>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-content">
+        <div class="header-el"><h1>致悦会计事务所</h1><span>欢迎您，管理员&nbsp;<em id="username"></em></span></div>
+        <div class="content-wrap clearfix" >
+            <div class="left-wrap">
+                <ul>
+                    <li class="active"><a href="./adminBanner.html">banner管理</a></li>
+                    <li><a href="./adminNews.html">新闻管理</a></li>
+                    <li><a href="./adminAnli.html">成功案例</a></li>
+                    <li><a href="./adminZcjd.html">政策解读</a></li>
+                </ul>
+            </div>
+            <div class="right-wrap">
+                <h3>banner管理</h3>
+                <div class="handler-btn">
+                    <button id="addBtn">新增</button>
+                </div>
+                <div class="banner-con-wrap right-con-wrap">
+                    <p id="empty">这里什么都没有,请添加banner</p>
+                    <table >
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>标题</td>
+                            <td>banner预览</td>
+                            <td>banner链接</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <!-- <td>1</td>
+                                <td>banner1</td>
+                                <td><img src="http://localhost:8088/public/images/banner1.jpg"></td>
+                                <td>http://localhost:8088/public/images/banner1.jpg</td>
+                                <td><button class="modifyBtn">编辑</button><button class="cancleBtn">删除</button></td> -->
+                            </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addMak common-dialog-mask">
+        <div class="common-dialog-container">
+            <button class="dialog-close-btn">X</button>
+            <div class="common-dialog-header">
+                <h3>新增banner</h3>
+            </div>
+            <div class="common-dialog-content">
+                <form id="addForm">
+                        <!-- action="http://localhost:8088/api/banner?active=addBanner" method="POST" enctype="multipart/form-data" -->
+                    <p>
+                        <label for="title">标题</label>
+                        <input type="text" name="title" id="title">
+                    </p>
+                    <p>
+                        <label for="bannerSrc">图片</label>
+                        <input type="file" name="bannerSrc" id="bannerSrc">
+                    </p>
+                    <p class="btn-el-wrap">
+                        <input class="dialogConfirmBtn" type="submit" id="addSubmit" value="确认">
+                        <input class="dialogConfirmBtn" type="button" id="addCancle" value="取消">
+                    </p>    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="editorMsk  common-dialog-mask">
+        <div class="common-dialog-container">
+            <button class="dialog-close-btn">X</button>
+            <div class="common-dialog-header">
+                <h3>编辑banner</h3>
+            </div>
+            <div class="common-dialog-content">
+                <form id="editorForm" >
+                    <p>
+                        <label for="title1">标题</label>
+                        <input type="text" name="title1" id="title1">
+                    </p>
+                    <p>
+                        <label for="bannerSrc1">图片</label>
+                        <input type="file" name="bannerSrc1" id="bannerSrc1">
+                    </p>
+                    <p class="btn-el-wrap">
+                        <input class="dialogConfirmBtn" type="submit" id="editorSubmit" value="确认">
+                        <input class="dialogConfirmBtn" type="button" id="editorCancle" value="取消">
+                    </p>    
+                </form>
+            </div>
+        </div>
+    </div>    
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/adminBanner.js"></script>
+</body>
+</html>
