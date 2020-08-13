@@ -32,7 +32,7 @@ $(function () {
             dataType: "json",
             success(res) {
                 if (res.resCode == 1) {
-                    var banners = res.data.banners;
+                    var banners = res && res.data && res.data.banners;
                     console.log(banners)
                     if (banners == 0) {
                         $("#empty").addClass("active").siblings(".banner-con-wrap table").removeClass("active");

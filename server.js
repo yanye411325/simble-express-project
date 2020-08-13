@@ -22,7 +22,6 @@ const db = mysql.createPool({
     password: "lkk411325",
     database: "zydata"
 });
-
 server.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -42,7 +41,7 @@ server.engine("html", consolidate.ejs);
 server.use("/", function (req, res, next) {
     db.query("SELECT * FROM banners", (err, data) => {
         if (err) {
-            res.status(500).send("database error").end();
+            res.status(500).send(err).end();
         } else {
             res.banners = data;
             next();
@@ -110,6 +109,13 @@ server.use("/case.html", (req, res) => {
 server.use("/news", require("./router/web/news")());
 server.use("/zcjd", require("./router/web/zcjd")());
 server.use("/anli", require("./router/web/anli")());
+server.on("request",function(req,res){
+    if(req.url=="/favicon.ico")
+        console.log(req.url);
+    res.end();
+});
+
+console.log('连接成功')
 server.use("/api/login", (req, res) => {
     var user = req.body.username;
     var psd = req.body.psd;
