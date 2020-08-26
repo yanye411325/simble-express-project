@@ -217,6 +217,8 @@ server.use("/api/banner", (req, res) => {
         const newPath = req.files[0].path + ext;
         const fileName = req.files[0].filename + ext;
         const src = `${fileName}`;
+
+        console.log(fileName)
         fs.rename(oldPath, newPath, (err) => {
             if (err) {
                 console.error("file operation err")

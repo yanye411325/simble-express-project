@@ -72,6 +72,8 @@ $(function () {
         };
         e.preventDefault();
         var formData = new FormData($("#addForm")[0]); 
+        alert(111)
+        alert(JSON.stringify($("#addForm")[0]))
         $.ajax({
             type: "POST",
             url: "http://localhost:8088/api/banner?active=addBanner",
